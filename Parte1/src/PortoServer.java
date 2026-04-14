@@ -142,6 +142,7 @@ public class PortoServer implements IServico {
     @Override
     public void remover_carga(Integer id) throws RemoteException {
         System.out.println("Executando remover_carga()");
+        System.out.println("Removendo carga com ID: " + id );
         cargas.removeIf(c -> c.id == id);
     }
 
